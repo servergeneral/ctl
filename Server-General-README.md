@@ -1,7 +1,7 @@
 ![Server General Logo](http://kms.servergeneral.com/mediapress/server-general-logo.png)
 
 ### Summary
-Server General KMaaS is a Key-Management-as-a-Service for customers who want to use MySQL TDE to encrypt their data. Our service obviates the need for you to build complicated, expensive and time consuming in-house key management solutions. With Server General KMaaS you will be able to focus on developing your applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker irrespective of where your MySQL server is hosted. Our service helps customers to achieve regulatory compliance with HIPAA Act or PCI DSS mandates with ease.
+Server General KMaaS is a Key-Management-as-a-Service for customers who want to use MySQL TDE to encrypt their data. Our service obviates the need for you to build complicated, expensive and time consuming in-house key management solutions. With Server General KMaaS you will be able to focus on developing your applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker irrespective of where your MySQL server is hosted. Customers use our service to achieve regulatory compliance with HIPAA Act or PCI DSS mandates with ease.
 
 ### Description
 Server General KMaaS is built on top of our secure platform, Server General. The core components of our platform are a data encryption engine, a key management engine, an access control engine, and a reporting engine. Each component performs a critical function in securing the MySQL Master key(MMK).
