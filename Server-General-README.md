@@ -6,17 +6,17 @@ Server General KMaaS is a Key-Management-as-a-Service for customers who want to 
 ### Description
 Server General KMaaS is built on top of our secure platform, Server General. The core components of our platform are a data encryption engine, a key management engine, an access control engine, and a reporting engine. Each component performs a critical function in securing the MySQL Master key(MMK).
 
-#### Fully Managed Service
+* **Fully Managed Service** <br>
 Server General KMaaS is a key management solution offered as a service. You control your own encryption keys while we ensure availability and security of your keys.
-#### Works With All Cloud Platforms
+* **Works With All Cloud Platforms** <br>
 Server General KMS allows you to centralize and manage your keys for your MySQL servers spread across distributed cloud platforms - Amazon, Google, Rackspace or within your own data center.
-#### Store Keys On-Premises Locker or in a Cloud Locker
+* **Store Keys On-Premises Locker or in a Cloud Locker** <br>
 You will be able to store your MySQL encryption keys in a secure appliance deployed on-premises or within our cloud lockers. We encrypt your MySQL master encryption key with a key that is only known to you. This way we never have access to the actual encryption key.
-#### Low-cost
+* **Low-cost** <br>
 Unlike other vendors whose key management solutions can easily cost you thousands of dollars we see ourselves as a no-frills service provider. You can start with our cloud locker for as little as $199/month.
-#### Security
+* **Security** <br>
 Our on-premises solution consists of a battle hardened virtual appliance while our cloud key management infrastructure is managed by our security experts on 24x7x365 basis. All privileged operations are logged at four different locations in order to provide non-repudiation. 
-#### Compliance
+* **Compliance** <br>
 Your encryption keys are stored away from your encrypted data sets which is generally one of the main requirements for compliance. Our on-premises key locker option will help you limit the scope of compliance to your own network. Our key generation, storage, rotation and revocation capabilities will help you meet the most stringent compliance requirements.
 
 
