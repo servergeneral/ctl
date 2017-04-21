@@ -1,7 +1,7 @@
 ![Server General Logo](http://kms.servergeneral.com/mediapress/server-general-logo.png)
 
 ### Summary
-Server General KMaaS is a Key-Management-as-a-Service for customers who want to use MySQL TDE to encrypt their data. Our service obviates the need for you to build complicated, expensive and time consuming in-house key management solutions. With Server General KMaaS you will be able to focus on developing your applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker irrespective of where your MySQL is hosted. Most of our customers use our service to achieve regulatory compliance with HIPAA Act or PCI DSS mandates.
+Server General KMaaS is a Key-Management-as-a-Service for customers who want to use MySQL TDE to encrypt their data. Our service obviates the need for you to build complicated, expensive and time consuming in-house key management solutions. With Server General KMaaS you will be able to focus on developing your applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker irrespective of where your MySQL server is hosted. Our service helps customers to achieve regulatory compliance with HIPAA Act or PCI DSS mandates with ease.
 
 ### Description
 Server General KMaaS is built on top of our secure platform, Server General. The core components of our platform are a data encryption engine, a key management engine, an access control engine, and a reporting engine. Each component performs a critical function in securing the MySQL Master key(MMK).
@@ -17,7 +17,7 @@ Unlike other vendors whose key management solutions can easily cost you thousand
 * Security
 Our on-premises solution consists of a battle hardened virtual appliance while our cloud key management infrastructure is managed by our security experts on 24x7x365 basis. All privileged operations are logged at four different locations in order to provide non-repudiation. 
 * Compliance
-Your encryption keys are stored away from your encrypted data sets which is generally one of the main requirements for compliance. You are able to further limit the scope of compliance by going with our on-premises key locker option. We provide key generation, storage, rotation and revocation capabilities.
+Your encryption keys are stored away from your encrypted data sets which is generally one of the main requirements for compliance. Our on-premises key locker option will help you limit the scope of compliance to your own network. Our key generation, storage, rotation and revocation capabilities will help you meet the most stringent compliance requirements.
 
 
 This diagram illustrates the Server General KMaaS architecture.
@@ -25,7 +25,7 @@ This diagram illustrates the Server General KMaaS architecture.
 ![Server General KMaaS Architecture](https://kms.servergeneral.com/mediapress/how_does_it_work_kms.png)
 
 ### Additional Information
-For more details on the Server General KMaaS architecture, please visit the [Server General Documentation page](https://kms.servergeneral.com/technology/).
+For more details on the Server General KMaaS architecture, please visit the [Server General Technology page](https://kms.servergeneral.com/technology/).
 
 ### Deployment Process
 This Runner job performs the following steps:
