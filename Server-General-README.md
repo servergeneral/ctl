@@ -9,7 +9,7 @@ Server General KMS is built on top of our secure platform, Server General. The c
 * **Fully Managed Service** <br>
 Server General KMS is a key management solution offered as a service. You control your own encryption keys while we ensure availability and security of your keys.
 * **Works With All Cloud Platforms** <br>
-Server General KMS allows you to centralize and manage your encryption keys for your MySQL servers spread across distributed cloud platforms - Amazon, Google, Rackspace or within your own data center.
+Server General KMS allows you to centralize and manage your encryption keys for your MySQL servers spread across distributed cloud platforms - Amazon, CenturyLink, Google, Rackspace or within your own data center.
 * **On-Premises Locker or a Cloud Locker** <br>
 You have the option of storing your MySQL encryption keys in a secure appliance deployed on-premises or within our cloud lockers. We encrypt your MySQL master encryption key with a key that is only known to you. This way we never have access to the actual encryption key.
 * **Low-cost** <br>
