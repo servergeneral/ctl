@@ -1,7 +1,7 @@
 ![Server General Logo](http://kms.servergeneral.com/mediapress/server-general-logo.png)
 
 ### Summary
-Server General KMS is a Key-Management-as-a-Service for customers who want to use their own encryption to encrypt their data but do not want to build or manage complicated, expensive and time consuming in-house key management system. "Server General KMS for MySQL" is especially designed to serve customers who want to use built-in encryption capabilities of their MySQL server. With Server General KMS you will be able to focus on developing your applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker. Your MySQL server could be hosted on any cloud platform or within your own data center. Customers use our service to achieve regulatory compliance with HIPAA Act or PCI DSS mandates with ease.
+Server General KMS is a key management service for customers who want to use their own encryption to encrypt their data but do not want to build or manage a complicated, expensive and time consuming in-house key management system. "Server General KMS for MySQL" is especially designed to serve customers who want to use built-in encryption capabilities of their MySQL server. With Server General KMS you will be able to focus on developing your applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker. Your MySQL server could be hosted on any cloud platform or within your own data center. Customers use our service to achieve regulatory compliance with HIPAA Act or PCI DSS mandates with ease.
 
 ### Description
 Server General KMS is built on top of our secure platform, Server General. The core components of our platform are a data encryption engine, a key management engine, an access control engine, and a reporting engine. Each component performs a critical function in securing the MySQL Master key(MMK).
@@ -10,7 +10,7 @@ Server General KMS is built on top of our secure platform, Server General. The c
 Server General KMS is a key management solution offered as a service. You control your own encryption keys while we ensure availability and security of your keys.
 * **Works With All Cloud Platforms** <br>
 Server General KMS allows you to centralize and manage your encryption keys for your MySQL servers spread across distributed cloud platforms - Amazon, Google, Rackspace or within your own data center.
-* **Store Keys On-Premises Locker or in a Cloud Locker** <br>
+* **On-Premises Locker or a Cloud Locker** <br>
 You have the option of storing your MySQL encryption keys in a secure appliance deployed on-premises or within our cloud lockers. We encrypt your MySQL master encryption key with a key that is only known to you. This way we never have access to the actual encryption key.
 * **Low-cost** <br>
 Unlike other vendors whose key management solutions can easily cost you thousands of dollars we see ourselves as a no-frills service provider. You can start with our cloud locker for as little as $199/month.
@@ -32,20 +32,20 @@ This Runner job performs the following steps:
 
 1. Installs a Server General Agent on your MySQL server deployed within CenturyLink Cloud account and initiates a monthly recurring subscription.
 2. Gets hold of basic customer information in order to generate a customer record.
-3. Will initialize a special user called "sgadmin". 
+3. Will initialize a special system user called "sgadmin". 
 4. Provisions a Server General Agent license.
 5. Notifies the Server General on-boarding team.
 
 ### Prerequisite(s)
 * Access to the CenturyLink Cloud platform as an authorized user.
 * Access to Ubuntu 14.04 or Ubuntu 16.04 or Debian-7 or Debian-8 or RHEL-6.x or CentOS-6.x virtual machine with a MySQL server 5.7.12 (or a higher release).
-* The contact information for the designated administrative contact.
+* Contact information for the designated administrative contact.
 
 ### Postrequisite(s)
 * Privileged ("root") access to the VM
 * Privileged ("root") access to the MySQL server
 * Names and email addresses of your designated personnel who will manage your Server General deployment
-* Ability to export server display using "ssh" e.g. ssh -X <IP address of your MySQL server>
+* Ability to export your MySQL server display using "ssh" e.g. ssh -X <IP address of your MySQL server>
 
 ### Pricing
 Our standard pricing for a Server General Agent is $199/month/server. This will allow you to protect your MySQL master encryption key as well as your MySQL log files.
