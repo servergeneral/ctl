@@ -1,4 +1,4 @@
-![Server General Logo](http://kms.servergeneral.com/mediapress/server-general-logo.png)
+![Server General Logo](https://www.servergeneral.com/wp-content/uploads/mediapress/server-general-logo.png)
 
 ### Summary
 *Server General KMS for MySQL* is a key management service for customers who want to use MySQL TDE to encrypt their data but do not want to build or manage a complicated, expensive and time consuming in-house key management system. With our service in place you will be able to focus on developing your business applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker. Your MySQL server can be hosted on any cloud platform or within your own data center. Customers use our service in order to comply with the HIPAA Act and PCI DSS mandates with ease.
@@ -22,10 +22,10 @@ Our on-premises key locker is a battle hardened virtual appliance while our clou
 
 This diagram illustrates how Server General KMS for MySQL for MySQL works.
 
-![*Server General KMS for MySQL* Architecture](https://www.servergeneral.com/mediapress/kms-mysql/how_does_it_work_kms.png/)
+![*Server General KMS for MySQL* Architecture](https://www.servergeneral.com/wp-content/uploads/mediapress/how_does_it_work_kms.png)
 
 ### Additional Information
-For more details on *Server General KMS for MySQL* architecture, please visit the [Server General Technology page](https://www.servergeneral.com/products/kms-mysql/technology/).
+For more details on *Server General KMS for MySQL* architecture, please visit the [Server General Technology page](https://www.servergeneral.com/products/kms/mysql/technology/).
 
 ### Deployment Process
 This Runner job performs the following steps:
