@@ -9,7 +9,7 @@ Managing and securing customer and employee data is a growing concern of all Inf
 ![*Server General TDE*](https://www.servergeneral.com/wp-content/uploads/TDE-diagram.jpg)
 
 ### Additional Information
-For more details on *Server General TDE* architecture, please visit the Server General TDE product offering page on our website.
+For more details on *Server General TDE* architecture, please visit the [Server General TDE product](https://www.servergeneral.com/products/tde/) offering page on our website. 
 
 ### Deployment Process
 This Runner job performs the following steps:
