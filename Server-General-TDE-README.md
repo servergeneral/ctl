@@ -1,87 +1,55 @@
-![Server General Logo](https://www.servergeneral.com/wp-content/uploads/mediapress/server-general-logo.png)
+![Server General logo](https://www.servergeneral.com/wp-content/uploads/mediapress/server-general-logo.png)
 
 ### Summary
-*Server General TDE* is a key management service for customers who want to use MySQL TDE to encrypt their data but do not want to build or manage a complicated, expensive and time consuming in-house key management system. With our service in place you will be able to focus on developing your business applications while we manage your MySQL master encryption keys in a secure and compliant manner. Our service enables you to store your encryption keys on-premises or within our cloud locker. Your MySQL server can be hosted on any cloud platform or within your own data center. Customers use our service in order to comply with security requirements of the HIPAA Act and the PCI DSS mandates.
+*Server General TDE* is a data encryption service that makes it easy to set-up, maintain, manage and administer data-at-rest encryption of your sensitive information stored in a database server or a file server deployed anywhere - public, private or a hybrid cloud. The service will allow you to offload your data encryption and key management responsibilities to proven experts while taking a concrete step towards achieving regulatory compliance with HIPAA/HITECH, PCI DSS mandates, GDPR, FISMA, GLBA, SOX and FERPA. *Server General TDE* has been certified to encrypt data stored in a MySQL, PostgreSQL, MongoDB, CouchDB or a file server. The service includes a full featured key management system that provides key generation, storage, rotation and revocation. It usually takes less than 30 minutes to install and configure our service. The service is geared towards small to medium sized businesses who want to cut their data security and compliance costs.
 
 ### Description
-*Server General TDE* is built on top of our secure platform, Server General. The core components of our platform are a data encryption engine, a key management engine, an access control engine, and a reporting engine. Each component performs a critical function in securing the MySQL Master key(MMK).
+Managing and securing customer and employee data is a growing concern of all Information Technology departments, especially when operating in the cloud. Organizations try hard to comply with regulations and industry mandates, but the effort necessary often exceeds the capability of small IT groups. *Server General TDE* being a service allows such organizations to focus on their business while helping them to encrypt their data and manage their encryption keys in a compliant manner. We use the AES encryption algorithm to encrypt data at the file system layer. Our service is designed to transparently encrypt each and every sensitive file with a unique and completely random key. All privileged operations conducted by the Server General administrators are logged within and outside of the administrative domains of our customers in order to provide non-repudiation. The service segregates management responsibilities based on roles in order to safeguard data. We provide an option to store the encryption keys on-premises in a secure appliance or within our secure cloud key locker infrastructure. It generally takes less than 30 minutes to install and configure our service.
 
-* **Fully Managed Service** <br>
-Organizations try hard to comply with regulations and industry mandates, but the effort necessary often exceeds the capability of small IT groups. *Server General TDE* being a service allows such organizations to focus on their business while we help them manage their MySQL encryption keys in a compliant manner. It generally takes less than 30 minutes to install and configure our service. Our service allows you to control your own encryption keys while we ensure their availability and security.
-* **Works With All Cloud Platforms** <br>
-*Server General TDE* allows you to centralize and manage your encryption keys for your MySQL servers spread across distributed cloud platforms - Amazon, CenturyLink, Google, Rackspace or within your own data center.
-* **Store Keys On-Premises Locker or a Cloud Locker** <br>
-You have the option of storing your MySQL encryption keys in a secure appliance deployed on-premises or within our cloud lockers. We encrypt your MySQL master encryption key with a key that is only known to you. This way we never have access to the actual encryption key.
-* **Low-cost** <br>
-Unlike other vendors whose key management solutions can easily cost you thousands of dollars we see ourselves as a no-frills service provider. You can start for as little as $199/month/server.
-* **Security** <br>
-Our on-premises key locker is a battle hardened virtual appliance while our cloud key management infrastructure is managed by our security experts on 24x7x365 basis. All privileged operations are logged at four different locations in order to provide non-repudiation. The MySQL master encryption key is not stored on your server but in a key locker. In case your server were to be compromised your encryption key will remain out of reach of an attacker as it is not stored on the server. When the key is needed to restart the MySQL service, our agent fetches the encrypted value from our key locker and only the data owner is able to reconstitute the actual encryption key using a secret passphrase. Furthermore, we use advanced access control mechanisms to deny the “root” user access to the key when it is being used on the server for a very brief period.
-* **Compliance** <br>
-*Server General TDE* stores your MySQL encryption key away from your encrypted data sets which is generally one of the main requirements of any data security regulation. You are further able to limit the scope of your compliance by deploying the key locker within your own network. Our key management system provides key generation, storage, rotation and revocation capabilities. We generate immutable logs of all privileged operations conducted by the Server General administrators by storing them at four different locations.
+![*Server General TDE*](https://www.servergeneral.com/wp-content/uploads/TDE-diagram.jpg)
 
+<<Server General TDE graphic goes here>>
 
-This diagram illustrates how Server General TDE for MySQL works.
+This diagram illustrates how Server General TDE works.
 
-![*Server General TDE* Architecture](https://www.servergeneral.com/wp-content/uploads/mediapress/how_does_it_work_kms.png)
+![*Server General TDE - How does it work*](https://www.servergeneral.com/wp-content/uploads/mediapress/how_does_it_work_kms.png)
 
 ### Additional Information
-For more details on *Server General TDE* architecture, please visit the [Server General Technology page](https://www.servergeneral.com/products/kms/mysql/technology/). 
+For more details on *Server General TDE* architecture, please visit the Server General TDE product offering page on our website.
 
 ### Deployment Process
 This Runner job performs the following steps:
 
-1. Installs a Server General Agent on your MySQL server deployed within CenturyLink Cloud account and initiates a monthly recurring subscription.
+1. Installs a Server General Agent on your server deployed within CenturyLink Cloud account and initiates a monthly recurring subscription.
 2. Gets hold of basic customer information in order to generate a customer record.
-3. Will initialize a special system user called "sgadmin". You will use this user to manage your Server General KMS installation.
-4. Acquires a Server General Agent subscription license and applies it to your server.
+3. Initializes a system user - “sgadmin” in order to manage the Server General TDE installation.
+4. Acquires a Server General Agent subscription license and applies it to your server. This step also provisions a cloud key locker account.
 5. Notifies the Server General on-boarding team.
 
 ### Prerequisite(s)
 * Access to the CenturyLink Cloud platform as an authorized user.
-* Access to Ubuntu 14.04 or Ubuntu 16.04 or Debian-7 or Debian-8 or RHEL-6.x or CentOS-6.x virtual machine with a MySQL server 5.7.12 (or a higher release).
+* Access to Ubuntu 14.04 or Ubuntu 16.04 or Debian-7 or Debian-8 or RHEL-6.x or CentOS-6.x virtual server.
 * Contact information for the designated administrative contact.
 
 ### Postrequisite(s)
-* Privileged ("root") access to the VM
-* Privileged ("root") access to the MySQL server
+* Privileged ("root") access to your virtual server
 * Names and email addresses of your designated personnel who will manage your Server General deployment
-* Ability to export your MySQL server display using "ssh" e.g. ssh -X <IP address of your MySQL server>. If for some reason you are not able to export display of your MySQL server, then you can use our commandline interface to configure *Server General TDE*.
 
 ### Pricing
-Our standard pricing for a Server General Agent is $199/month/server. This will allow you to protect your MySQL master encryption key as well as your MySQL log files.
+Our standard pricing for a Server General Agent is $199/month/server. Here is how our pricing differs from our competitor:
 
-### Frequently Asked Questions (FAQ)
-
-#### Will executing this Runner job charge my CenturyLink Cloud account?
-Yes, executing this Runner job will initiate a recurring monthly subscription. There is no on-boarding charge. You can cancel your service at anytime. You will be charged for the month in which you cancel your service.
-
-#### Who should I contact for support?
-* Please send support requests to: [support@servergeneral.com](mailto:support@servergeneral.com).
-* For issues related to CenturyLink Cloud infrastructure (VMs, network, etc.), please open a support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
-
-#### How difficult is it to deploy?
-Click the "Run" button to begin the deployment process. Then, populate the Runner job user-input fields with the following:
-* Contact information
-* E-mail address
-* Server Name
-* Password/Passphrase for the "sgadmin" user
-
-After updating the form fields, click the "Run" button again to initiate the Server General Agent deployment. Once the installation is finished the designated contact will receive an email or phone call from the On-boarding Project Manager (OPM) to schedule time to configure Server General TDE. If you like you can configure it yourself as well. The entire process generally takes less than 30 minutes.
-
-#### Can authorized MySQL users see the data in clear text format?
-Yes.
-
-#### What is the overhead associated with type of an approach to encryption?
-According to Oracle the “performance overhead amounts to a single digit percentage difference”.
-
-#### What encryption algorithm is used to encrypt MySQL data?
-Advanced Encryption Standard (AES) block-based encryption algorithm (Cipher Block Chaining -CBC- block encryption is used to MySQL data).
-
-#### Does database memory contain clear-text or encrypted data?
-In-memory data is decrypted.
-
-#### Can I use mysqlpump or mysqldump with encrypted tables?
-Yes. However, your dumped data is not going to be encrypted. You can use Server General encryption to encrypt your backups. It will cost you $99.99/month extra.
-
-#### Where does Server General store the MySQL master encryption key?
-The encrypted value of the master encryption key is stored in a cloud locker managed by Server General security professionals. You have the option of storing the master key in a virtual appliance deployed within your own network.
+Number of servers = 1
+Vormetric
+Server General
+TCO - Year - 1
+$14,372
+$2,400
+TCO - Year - 2
+$12,372
+$2,400
+TCO - Year - 3
+$12,372
+$2,400
+Total TCO for 3 years
+$39,116
+$7,200
