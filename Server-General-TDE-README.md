@@ -8,8 +8,6 @@ Managing and securing customer and employee data is a growing concern of all Inf
 
 ![*Server General TDE*](https://www.servergeneral.com/wp-content/uploads/TDE-diagram.jpg)
 
-<<Server General TDE graphic goes here>>
-
 This diagram illustrates how Server General TDE works.
 
 ![*Server General TDE - How does it work*](https://www.servergeneral.com/wp-content/uploads/mediapress/how_does_it_work_kms.png)
@@ -38,18 +36,18 @@ This Runner job performs the following steps:
 ### Pricing
 Our standard pricing for a Server General Agent is $199/month/server. Here is how our pricing differs from our competitor:
 
-Number of servers = 1
-Vormetric
-Server General
-TCO - Year - 1
-$14,372
-$2,400
-TCO - Year - 2
-$12,372
-$2,400
-TCO - Year - 3
-$12,372
-$2,400
-Total TCO for 3 years
-$39,116
-$7,200
+|Number of servers = 1|TCO - Year - 1|TCO - Year - 2|TCO - Year - 3|Total TCO for 3 years|
+|---------------------|-------------:|-------------:|-------------:|--------------------:|
+|Vormetric            |$14,372       |$12,372       |$12,372       |$39,116              |
+|Server General       |$2,400        |$2,400        |$2,400        |$7,200               |
+
+
+
+
+
+
+
+
+
+
+
