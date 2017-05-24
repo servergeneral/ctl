@@ -18,7 +18,7 @@ Managing and securing customer and employee data is a growing concern of all Inf
 
 This diagram illustrates how Server General TDE works.
 
-![*Server General TDE* Architecture](https://www.servergeneral.com/wp-content/uploads/how_does_it_works_TDE_web.jpg)
+![*Server General TDE* Architecture](https://www.servergeneral.com/wp-content/uploads/how_does_it_works_TDE_web_2017.jpg)
 
 ### Additional Information
 For more details on *Server General TDE* architecture, please visit the [Server General TDE product offering page](https://www.servergeneral.com/products/tde/) on our website. 
